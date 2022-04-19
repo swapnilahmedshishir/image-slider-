@@ -1,0 +1,100 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-size: verdana , sans-serif;
+  margin: 0;
+}
+
+/* .mySlides{
+  display: none;
+} */
+
+img{
+  vertical-align: middle;
+}
+/* sidesahow container */
+.slideshow-container{
+  max-width: 1370px;
+  position: relative;
+  margin: auto;
+}
+/* next and previous button  */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top:50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color:white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* position in the next butoon  to the right site */
+.next{
+  right: 0;
+  border-radius: 3px 0 0 3px ;
+}
+.prev:hover, 
+.next:hover{
+  background-color: rgba(39, 23, 23, 0);
+}
+
+/* caption text */
+.text{
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 10px 15px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+/* number text x/6 */
+.numbertext{
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 10px 12px;
+  position: absolute;
+  top: 0;
+}
+/* the dot work done */
+.dot{
+  cursor: pointer;
+  height: 15px;
+  width: 13px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover{
+  background-color: #717171;
+}
+/* fading animation */
+.fade{
+  -webkit-animation-name:fade ;
+  animation-name: fade;
+  -webkit-animation-duration:1.5s ;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4;}
+  to {opacity: 1;}
+}
+@keyframes fade {
+  from{opacity: .4;}
+  to {opacity: 1;}
+}
+/* smaller skin , decrease text size  */
+@media only screen and (max-width:300px){
+  .prev, .next, .text{
+    font-size: 11px;
+  }
+}
